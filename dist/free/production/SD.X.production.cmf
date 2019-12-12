@@ -1,0 +1,876 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcXivdt7J.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 8 8 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/free/production/SD.X.production.o
+cinit CODE 0 A A 14 2
+text1 CODE 0 1E 1E 2C0 2
+text2 CODE 0 691 691 10 2
+text3 CODE 0 680 680 11 2
+text4 CODE 0 4F8 4F8 68 2
+text5 CODE 0 5E1 5E1 26 2
+text6 CODE 0 641 641 1A 2
+text7 CODE 0 6F0 6F0 5 2
+text8 CODE 0 2DE 2DE CE 2
+text9 CODE 0 6A1 6A1 10 2
+text10 CODE 0 65B 65B 13 2
+text11 CODE 0 3AC 3AC C0 2
+text12 CODE 0 5A2 5A2 3F 2
+text13 CODE 0 607 607 1D 2
+text14 CODE 0 46C 46C 8C 2
+text15 CODE 0 560 560 42 2
+text16 CODE 0 6C0 6C0 E 2
+text17 CODE 0 624 624 1D 2
+text18 CODE 0 6CE 6CE B 2
+text19 CODE 0 6E3 6E3 7 2
+text20 CODE 0 66E 66E 12 2
+text21 CODE 0 6D9 6D9 A 2
+maintext CODE 0 6B1 6B1 F 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 36 1
+intentry CODE 0 4 4 4 2
+bssBANK0 BANK0 1 56 56 11 1
+bssBANK1 BANK1 1 A0 A0 10 1
+clrtext CODE 0 6EA 6EA 6 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 67-6F 1
+RAM B0-EF 1
+RAM 120-16F 1
+BANK0 67-6F 1
+BANK1 B0-EF 1
+BANK2 120-16F 1
+CONST 2-3 2
+CONST 6F5-FFF 2
+ENTRY 2-3 2
+ENTRY 6F5-FFF 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2060-20EF 1
+CODE 2-3 2
+CODE 6F5-FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-1EF 1
+SFR4 200-26F 1
+SFR5 280-2EF 1
+SFR6 300-36F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-20EF 1
+EEDATA F000-F0FF 2
+STRCODE 2-3 2
+STRCODE 6F5-FFF 2
+STRING 2-3 2
+STRING 6F5-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/free/production/SD.X.production.o
+A cinit CODE >1146:/tmp/xcXgAXg0s.s
+A cinit CODE >1149:/tmp/xcXgAXg0s.s
+A cinit CODE >1182:/tmp/xcXgAXg0s.s
+B cinit CODE >1183:/tmp/xcXgAXg0s.s
+C cinit CODE >1184:/tmp/xcXgAXg0s.s
+D cinit CODE >1185:/tmp/xcXgAXg0s.s
+E cinit CODE >1186:/tmp/xcXgAXg0s.s
+F cinit CODE >1187:/tmp/xcXgAXg0s.s
+12 cinit CODE >1191:/tmp/xcXgAXg0s.s
+13 cinit CODE >1192:/tmp/xcXgAXg0s.s
+14 cinit CODE >1193:/tmp/xcXgAXg0s.s
+15 cinit CODE >1194:/tmp/xcXgAXg0s.s
+16 cinit CODE >1195:/tmp/xcXgAXg0s.s
+17 cinit CODE >1196:/tmp/xcXgAXg0s.s
+1A cinit CODE >1202:/tmp/xcXgAXg0s.s
+1A cinit CODE >1204:/tmp/xcXgAXg0s.s
+1B cinit CODE >1205:/tmp/xcXgAXg0s.s
+1C cinit CODE >1206:/tmp/xcXgAXg0s.s
+4 intentry CODE >66:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6 intentry CODE >67:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6D9 text21 CODE >37:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6DA text21 CODE >38:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6DD text21 CODE >39:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6E1 text21 CODE >40:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6E2 text21 CODE >41:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+66E text20 CODE >31:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+66F text20 CODE >32:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+671 text20 CODE >33:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+675 text20 CODE >32:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+67F text20 CODE >35:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6E3 text19 CODE >59:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6E3 text19 CODE >60:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6E5 text19 CODE >61:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6E9 text19 CODE >62:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6CE text18 CODE >43:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6CE text18 CODE >45:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6D0 text18 CODE >46:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6D7 text18 CODE >47:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6D8 text18 CODE >48:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+624 text17 CODE >214:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+624 text17 CODE >215:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+625 text17 CODE >216:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+62E text17 CODE >217:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+636 text17 CODE >215:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+640 text17 CODE >219:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6C0 text16 CODE >50:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6C0 text16 CODE >51:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6C4 text16 CODE >52:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6C6 text16 CODE >55:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6CA text16 CODE >56:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6CD text16 CODE >57:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+560 text15 CODE >91:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+561 text15 CODE >92:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+564 text15 CODE >93:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+56F text15 CODE >94:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+570 text15 CODE >95:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+572 text15 CODE >96:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+57D text15 CODE >97:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+57F text15 CODE >94:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+589 text15 CODE >92:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+59A text15 CODE >100:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+59C text15 CODE >101:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5A1 text15 CODE >102:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+46C text14 CODE >64:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+46E text14 CODE >67:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+46E text14 CODE >70:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+473 text14 CODE >71:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+486 text14 CODE >72:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+499 text14 CODE >73:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4AC text14 CODE >74:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4B0 text14 CODE >75:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4C0 text14 CODE >78:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4C4 text14 CODE >79:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4D9 text14 CODE >80:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4DD text14 CODE >83:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4DF text14 CODE >84:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4E6 text14 CODE >85:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4EC text14 CODE >83:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4F6 text14 CODE >88:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4F7 text14 CODE >89:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+607 text13 CODE >221:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+607 text13 CODE >222:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+608 text13 CODE >223:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+611 text13 CODE >224:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+619 text13 CODE >222:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+623 text13 CODE >226:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5A2 text12 CODE >175:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5A4 text12 CODE >176:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5B5 text12 CODE >177:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5B8 text12 CODE >180:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5BD text12 CODE >181:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5BE text12 CODE >182:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5CA text12 CODE >181:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5D4 text12 CODE >186:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5E0 text12 CODE >188:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3AC text11 CODE >123:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3AC text11 CODE >125:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3AE text11 CODE >126:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3AF text11 CODE >127:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3B0 text11 CODE >130:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3BC text11 CODE >131:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3BF text11 CODE >134:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3C4 text11 CODE >135:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3D5 text11 CODE >136:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3D7 text11 CODE >137:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3D8 text11 CODE >139:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3E1 text11 CODE >134:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3E9 text11 CODE >143:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3ED text11 CODE >144:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3F1 text11 CODE >145:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+401 text11 CODE >146:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+415 text11 CODE >147:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+41A text11 CODE >148:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+41B text11 CODE >149:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+41C text11 CODE >151:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+425 text11 CODE >144:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+42D text11 CODE >153:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+42D text11 CODE >156:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+431 text11 CODE >157:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+435 text11 CODE >158:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+446 text11 CODE >159:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+448 text11 CODE >160:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+449 text11 CODE >157:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+451 text11 CODE >163:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+451 text11 CODE >166:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+455 text11 CODE >167:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+45D text11 CODE >168:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+466 text11 CODE >169:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+468 text11 CODE >172:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+46B text11 CODE >173:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+65B text10 CODE >12:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+65B text10 CODE >14:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+65D text10 CODE >15:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+65E text10 CODE >18:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+660 text10 CODE >19:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+661 text10 CODE >20:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+662 text10 CODE >21:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+663 text10 CODE >22:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+665 text10 CODE >25:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+667 text10 CODE >26:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+668 text10 CODE >27:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+66C text10 CODE >28:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+66D text10 CODE >29:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6A1 text9 CODE >15:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6A1 text9 CODE >22:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6A4 text9 CODE >23:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6A5 text9 CODE >35:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6A7 text9 CODE >47:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6A9 text9 CODE >48:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6AB text9 CODE >49:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6AD text9 CODE >57:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6AE text9 CODE >58:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6AF text9 CODE >59:/media/wiz/WYZ/devel/pic/SD.X/init.c
+6B0 text9 CODE >60:/media/wiz/WYZ/devel/pic/SD.X/init.c
+2DE text8 CODE >190:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+2DE text8 CODE >191:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+2E8 text8 CODE >192:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+2ED text8 CODE >193:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+30F text8 CODE >194:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+31A text8 CODE >195:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+341 text8 CODE >196:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+34A text8 CODE >197:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+380 text8 CODE >198:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3A3 text8 CODE >200:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+3AB text8 CODE >201:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6F0 text7 CODE >210:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6F0 text7 CODE >211:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6F4 text7 CODE >212:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+641 text6 CODE >203:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+641 text6 CODE >205:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+64D text6 CODE >206:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+656 text6 CODE >207:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+65A text6 CODE >208:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5E1 text5 CODE >263:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5E1 text5 CODE >265:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5E1 text5 CODE >266:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5E6 text5 CODE >267:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+5E9 text5 CODE >271:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+603 text5 CODE >272:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+606 text5 CODE >274:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4F8 text4 CODE >228:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4F8 text4 CODE >229:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+4FB text4 CODE >232:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+501 text4 CODE >233:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+506 text4 CODE >236:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+50B text4 CODE >237:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+510 text4 CODE >238:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+521 text4 CODE >239:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+523 text4 CODE >242:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+534 text4 CODE >243:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+539 text4 CODE >248:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+53E text4 CODE >249:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+54B text4 CODE >252:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+557 text4 CODE >253:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+55B text4 CODE >259:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+55E text4 CODE >260:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+55F text4 CODE >261:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+680 text3 CODE >302:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+680 text3 CODE >303:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+685 text3 CODE >304:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+688 text3 CODE >305:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+68C text3 CODE >306:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+68D text3 CODE >307:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+690 text3 CODE >309:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+691 text2 CODE >311:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+691 text2 CODE >312:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+694 text2 CODE >315:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+699 text2 CODE >316:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+69D text2 CODE >317:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+6A0 text2 CODE >321:/media/wiz/WYZ/devel/pic/SD.X/SD.c
+1E text1 CODE >34:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1E text1 CODE >36:/media/wiz/WYZ/devel/pic/SD.X/main.c
+26 text1 CODE >38:/media/wiz/WYZ/devel/pic/SD.X/main.c
+32 text1 CODE >39:/media/wiz/WYZ/devel/pic/SD.X/main.c
+40 text1 CODE >52:/media/wiz/WYZ/devel/pic/SD.X/main.c
+54 text1 CODE >53:/media/wiz/WYZ/devel/pic/SD.X/main.c
+57 text1 CODE >54:/media/wiz/WYZ/devel/pic/SD.X/main.c
+5B text1 CODE >53:/media/wiz/WYZ/devel/pic/SD.X/main.c
+69 text1 CODE >56:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6C text1 CODE >57:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6C text1 CODE >59:/media/wiz/WYZ/devel/pic/SD.X/main.c
+80 text1 CODE >60:/media/wiz/WYZ/devel/pic/SD.X/main.c
+83 text1 CODE >61:/media/wiz/WYZ/devel/pic/SD.X/main.c
+87 text1 CODE >60:/media/wiz/WYZ/devel/pic/SD.X/main.c
+95 text1 CODE >63:/media/wiz/WYZ/devel/pic/SD.X/main.c
+98 text1 CODE >64:/media/wiz/WYZ/devel/pic/SD.X/main.c
+98 text1 CODE >71:/media/wiz/WYZ/devel/pic/SD.X/main.c
+AC text1 CODE >72:/media/wiz/WYZ/devel/pic/SD.X/main.c
+B8 text1 CODE >73:/media/wiz/WYZ/devel/pic/SD.X/main.c
+BC text1 CODE >74:/media/wiz/WYZ/devel/pic/SD.X/main.c
+C0 text1 CODE >75:/media/wiz/WYZ/devel/pic/SD.X/main.c
+C8 text1 CODE >76:/media/wiz/WYZ/devel/pic/SD.X/main.c
+D1 text1 CODE >77:/media/wiz/WYZ/devel/pic/SD.X/main.c
+D9 text1 CODE >78:/media/wiz/WYZ/devel/pic/SD.X/main.c
+E1 text1 CODE >79:/media/wiz/WYZ/devel/pic/SD.X/main.c
+E3 text1 CODE >80:/media/wiz/WYZ/devel/pic/SD.X/main.c
+E7 text1 CODE >79:/media/wiz/WYZ/devel/pic/SD.X/main.c
+F2 text1 CODE >74:/media/wiz/WYZ/devel/pic/SD.X/main.c
+FC text1 CODE >83:/media/wiz/WYZ/devel/pic/SD.X/main.c
+FF text1 CODE >84:/media/wiz/WYZ/devel/pic/SD.X/main.c
+FF text1 CODE >91:/media/wiz/WYZ/devel/pic/SD.X/main.c
+113 text1 CODE >92:/media/wiz/WYZ/devel/pic/SD.X/main.c
+117 text1 CODE >93:/media/wiz/WYZ/devel/pic/SD.X/main.c
+11A text1 CODE >94:/media/wiz/WYZ/devel/pic/SD.X/main.c
+11E text1 CODE >93:/media/wiz/WYZ/devel/pic/SD.X/main.c
+12C text1 CODE >96:/media/wiz/WYZ/devel/pic/SD.X/main.c
+130 text1 CODE >97:/media/wiz/WYZ/devel/pic/SD.X/main.c
+133 text1 CODE >100:/media/wiz/WYZ/devel/pic/SD.X/main.c
+136 text1 CODE >101:/media/wiz/WYZ/devel/pic/SD.X/main.c
+148 text1 CODE >102:/media/wiz/WYZ/devel/pic/SD.X/main.c
+155 text1 CODE >103:/media/wiz/WYZ/devel/pic/SD.X/main.c
+15F text1 CODE >102:/media/wiz/WYZ/devel/pic/SD.X/main.c
+164 text1 CODE >105:/media/wiz/WYZ/devel/pic/SD.X/main.c
+167 text1 CODE >107:/media/wiz/WYZ/devel/pic/SD.X/main.c
+171 text1 CODE >108:/media/wiz/WYZ/devel/pic/SD.X/main.c
+179 text1 CODE >109:/media/wiz/WYZ/devel/pic/SD.X/main.c
+184 text1 CODE >110:/media/wiz/WYZ/devel/pic/SD.X/main.c
+190 text1 CODE >108:/media/wiz/WYZ/devel/pic/SD.X/main.c
+196 text1 CODE >112:/media/wiz/WYZ/devel/pic/SD.X/main.c
+197 text1 CODE >113:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1A4 text1 CODE >121:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1B9 text1 CODE >122:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1C5 text1 CODE >123:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1C8 text1 CODE >124:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1D5 text1 CODE >125:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1D9 text1 CODE >124:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1DF text1 CODE >127:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1E2 text1 CODE >122:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1ED text1 CODE >129:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1F0 text1 CODE >130:/media/wiz/WYZ/devel/pic/SD.X/main.c
+1F0 text1 CODE >142:/media/wiz/WYZ/devel/pic/SD.X/main.c
+205 text1 CODE >143:/media/wiz/WYZ/devel/pic/SD.X/main.c
+20F text1 CODE >144:/media/wiz/WYZ/devel/pic/SD.X/main.c
+212 text1 CODE >145:/media/wiz/WYZ/devel/pic/SD.X/main.c
+216 text1 CODE >146:/media/wiz/WYZ/devel/pic/SD.X/main.c
+223 text1 CODE >147:/media/wiz/WYZ/devel/pic/SD.X/main.c
+227 text1 CODE >146:/media/wiz/WYZ/devel/pic/SD.X/main.c
+22D text1 CODE >149:/media/wiz/WYZ/devel/pic/SD.X/main.c
+231 text1 CODE >150:/media/wiz/WYZ/devel/pic/SD.X/main.c
+234 text1 CODE >143:/media/wiz/WYZ/devel/pic/SD.X/main.c
+23A text1 CODE >152:/media/wiz/WYZ/devel/pic/SD.X/main.c
+23D text1 CODE >155:/media/wiz/WYZ/devel/pic/SD.X/main.c
+240 text1 CODE >156:/media/wiz/WYZ/devel/pic/SD.X/main.c
+253 text1 CODE >157:/media/wiz/WYZ/devel/pic/SD.X/main.c
+25C text1 CODE >158:/media/wiz/WYZ/devel/pic/SD.X/main.c
+25F text1 CODE >159:/media/wiz/WYZ/devel/pic/SD.X/main.c
+26C text1 CODE >160:/media/wiz/WYZ/devel/pic/SD.X/main.c
+276 text1 CODE >159:/media/wiz/WYZ/devel/pic/SD.X/main.c
+27B text1 CODE >162:/media/wiz/WYZ/devel/pic/SD.X/main.c
+27E text1 CODE >157:/media/wiz/WYZ/devel/pic/SD.X/main.c
+284 text1 CODE >164:/media/wiz/WYZ/devel/pic/SD.X/main.c
+287 text1 CODE >166:/media/wiz/WYZ/devel/pic/SD.X/main.c
+291 text1 CODE >167:/media/wiz/WYZ/devel/pic/SD.X/main.c
+299 text1 CODE >168:/media/wiz/WYZ/devel/pic/SD.X/main.c
+2A4 text1 CODE >169:/media/wiz/WYZ/devel/pic/SD.X/main.c
+2B0 text1 CODE >167:/media/wiz/WYZ/devel/pic/SD.X/main.c
+2B6 text1 CODE >171:/media/wiz/WYZ/devel/pic/SD.X/main.c
+2B7 text1 CODE >172:/media/wiz/WYZ/devel/pic/SD.X/main.c
+2C4 text1 CODE >186:/media/wiz/WYZ/devel/pic/SD.X/main.c
+2D0 text1 CODE >187:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6B1 maintext CODE >21:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6B1 maintext CODE >22:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6B4 maintext CODE >23:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6B7 maintext CODE >24:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6BA maintext CODE >27:/media/wiz/WYZ/devel/pic/SD.X/main.c
+6EA clrtext CODE >1171:/tmp/xcXgAXg0s.s
+6EA clrtext CODE >1172:/tmp/xcXgAXg0s.s
+6EB clrtext CODE >1173:/tmp/xcXgAXg0s.s
+6EB clrtext CODE >1174:/tmp/xcXgAXg0s.s
+6EC clrtext CODE >1175:/tmp/xcXgAXg0s.s
+6ED clrtext CODE >1176:/tmp/xcXgAXg0s.s
+6EE clrtext CODE >1177:/tmp/xcXgAXg0s.s
+6EF clrtext CODE >1178:/tmp/xcXgAXg0s.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/free/production/SD.X.production.o
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 B0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_Enable 0 0 ABS 0 - dist/free/production/SD.X.production.o
+_SSP1STATbits 214 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_Card_GetSize 5BC 0 CODE 0 text8 dist/free/production/SD.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_SD_Card_Disable DD4 0 CODE 0 text19 dist/free/production/SD.X.production.o
+loop@i 3F 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@j 4F 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@p 55 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__size_of_SD_Card_WaitIfBusy 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__end_of_SD_Card_Crc7 B44 0 CODE 0 text15 dist/free/production/SD.X.production.o
+__end_of_SD_Card_Init 8D8 0 CODE 0 text11 dist/free/production/SD.X.production.o
+_LATA 10C 0 ABS 0 - dist/free/production/SD.X.production.o
+_PEIE 5E 0 ABS 0 - dist/free/production/SD.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xcXivdt7J.o
+_init D42 0 CODE 0 text9 dist/free/production/SD.X.production.o
+_loop 3C 0 CODE 0 text1 dist/free/production/SD.X.production.o
+_main D62 0 CODE 0 maintext dist/free/production/SD.X.production.o
+btemp 7E 0 ABS 0 - dist/free/production/SD.X.production.o
+SD_SPI_Clock@i 73 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+start 10 0 CODE 0 init /tmp/xcXivdt7J.o
+__size_of_SD_SPI_Init 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_SPI_Read 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_init 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_loop 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_main 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_Command 0 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_FLAGS 56 0 BANK0 1 bssBANK0 dist/free/production/SD.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_SD_SPI_Clock CDC 0 CODE 0 text20 dist/free/production/SD.X.production.o
+_SD_SPI_Write DB2 0 CODE 0 text21 dist/free/production/SD.X.production.o
+__size_of_SD_Card_RWInit 0 0 ABS 0 - dist/free/production/SD.X.production.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xcXivdt7J.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcXivdt7J.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcXivdt7J.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcXivdt7J.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcXivdt7J.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcXivdt7J.o
+wtemp0 7E 0 ABS 0 - dist/free/production/SD.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+loop@i_310 41 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_313 43 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_315 45 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_317 47 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_318 50 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_320 49 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_322 4B 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_325 4D 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@i_326 52 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@j_319 53 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@j_321 54 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+loop@j_324 51 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+_SD_Card_Disable DC6 0 CODE 0 text19 dist/free/production/SD.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_ANSELA 18C 0 ABS 0 - dist/free/production/SD.X.production.o
+__end_of_SD_Card_WaitStartToken C48 0 CODE 0 text13 dist/free/production/SD.X.production.o
+__size_of_SD_SPI_Clock 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_SPI_Write 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_GetSize 0 0 ABS 0 - dist/free/production/SD.X.production.o
+SD_Card_Command@response 2C 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+SD_Card_ReadReg16@i 31 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+SD_Card_GetSize@c_size_845 74 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__end_of_SD_SPI_Clock D00 0 CODE 0 text20 dist/free/production/SD.X.production.o
+__end_of_SD_SPI_Write DC6 0 CODE 0 text21 dist/free/production/SD.X.production.o
+_OPTION_REG 95 0 ABS 0 - dist/free/production/SD.X.production.o
+___stackhi 20EF 0 ABS 0 - /tmp/xcXivdt7J.o
+___stacklo 2060 0 ABS 0 - /tmp/xcXivdt7J.o
+_SD_Card_RWStartMulti D00 0 CODE 0 text3 dist/free/production/SD.X.production.o
+SD_Card_Crc7@c 76 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_Card_Crc7@i 74 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_Card_Crc7@j 77 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+start_initialization 14 0 CODE 0 cinit dist/free/production/SD.X.production.o
+_OSCCON 99 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_RWStopMulti 0 0 ABS 0 - dist/free/production/SD.X.production.o
+_APFCONbits 11D 0 ABS 0 - dist/free/production/SD.X.production.o
+_TRISAbits 8C 0 ABS 0 - dist/free/production/SD.X.production.o
+SD_Card_WaitStartToken@i 74 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_SPI_Write@byte 70 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__size_of_SD_Card_Disable 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_ReadReg16 0 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_CID A0 0 BANK1 1 bssBANK1 dist/free/production/SD.X.production.o
+_SD_CSD 57 0 BANK0 1 bssBANK0 dist/free/production/SD.X.production.o
+__size_of_SD_Card_ProcessCRC 0 0 ABS 0 - dist/free/production/SD.X.production.o
+clear_ram0 DD4 0 CODE 0 clrtext dist/free/production/SD.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+_SD_Card_IsActive DE0 0 CODE 0 text7 dist/free/production/SD.X.production.o
+SD_Card_Init@i 34 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+SD_Card_RWInit@addr 2F 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+_TMR0IE 5D 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_SPI_Init CB6 0 CODE 0 text10 dist/free/production/SD.X.production.o
+_SD_SPI_Read D9C 0 CODE 0 text18 dist/free/production/SD.X.production.o
+___int_sp 0 0 STACK 2 stack /tmp/xcXivdt7J.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Hbank4 0 0 BANK4 1 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 3C 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+_SD_Card_RWStopMulti D22 0 CODE 0 text2 dist/free/production/SD.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 BANK3 1 bank3 -
+__Lbank4 0 0 BANK4 1 bank4 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 14 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+loop@cardSize 3B 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+_PORTAbits C 0 ABS 0 - dist/free/production/SD.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 10 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 10 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+_SD_Card_Enable D80 0 CODE 0 text16 dist/free/production/SD.X.production.o
+SD_Card_ReadReg16@dst 7D 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_Card_ReadReg16@reg 30 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/free/production/SD.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/free/production/SD.X.production.o
+__S0 8009 0 ABS 0 - -
+__S1 B0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 8 0 CODE 0 intentry dist/free/production/SD.X.production.o
+SD_Card_Command@payload 26 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+SD_Card_Command@i_734 2D 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__CFG_PLLEN$ON 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_WaitStartToken 0 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_Card_RWEnd$860 31 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__end_of_SD_Card_IsActive DEA 0 CODE 0 text7 dist/free/production/SD.X.production.o
+__end_of_isr 10 0 CODE 0 intentry dist/free/production/SD.X.production.o
+__CFG_BOREN$ON 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcXivdt7J.o
+__size_of_SD_Card_IsActive 0 0 ABS 0 - dist/free/production/SD.X.production.o
+loop@sum 37 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+_SD_Card_RWInit 9F0 0 CODE 0 text4 dist/free/production/SD.X.production.o
+__end_of_SD_Card_ReadReg16 BC2 0 CODE 0 text12 dist/free/production/SD.X.production.o
+__end_of_SD_Card_Enable D9C 0 CODE 0 text16 dist/free/production/SD.X.production.o
+SD_Card_Crc7@crc 78 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_Card_Crc7@len 71 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__end_of_SD_Card_WaitIfBusy C82 0 CODE 0 text17 dist/free/production/SD.X.production.o
+SD_Card_Command@a 79 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_Card_Command@i 2E 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__ptext10 CB6 0 CODE 0 text10 dist/free/production/SD.X.production.o
+__ptext11 758 0 CODE 0 text11 dist/free/production/SD.X.production.o
+__ptext12 B44 0 CODE 0 text12 dist/free/production/SD.X.production.o
+__ptext13 C0E 0 CODE 0 text13 dist/free/production/SD.X.production.o
+__ptext14 8D8 0 CODE 0 text14 dist/free/production/SD.X.production.o
+__ptext15 AC0 0 CODE 0 text15 dist/free/production/SD.X.production.o
+__ptext16 D80 0 CODE 0 text16 dist/free/production/SD.X.production.o
+__ptext17 C48 0 CODE 0 text17 dist/free/production/SD.X.production.o
+__ptext18 D9C 0 CODE 0 text18 dist/free/production/SD.X.production.o
+__ptext19 DC6 0 CODE 0 text19 dist/free/production/SD.X.production.o
+__ptext20 CDC 0 CODE 0 text20 dist/free/production/SD.X.production.o
+__ptext21 DB2 0 CODE 0 text21 dist/free/production/SD.X.production.o
+SD_SPI_Clock@count 72 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext D62 0 CODE 0 maintext dist/free/production/SD.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_Card_RWEnd BC2 0 CODE 0 text5 dist/free/production/SD.X.production.o
+__end_of_SD_Card_RWStopMulti D42 0 CODE 0 text2 dist/free/production/SD.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+SD_Card_Init@response 36 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+SD_Card_ProcessCRC@crc 78 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_Card_GetSize@read_bl_len 7A 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+?_SD_Card_ProcessCRC 73 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+_OSCTUNE 98 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_Card_WaitIfBusy C48 0 CODE 0 text17 dist/free/production/SD.X.production.o
+__CFG_LVP$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__end_of_SD_Card_RWInit AC0 0 CODE 0 text4 dist/free/production/SD.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 10 0 CODE 0 end_init -
+SD_Card_GetSize@c_size_mult 7B 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 34 0 CODE 0 cinit dist/free/production/SD.X.production.o
+__Hintentry 10 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+SD_Card_GetSize@c_size 78 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+_SD_Card_ReadReg16 B44 0 CODE 0 text12 dist/free/production/SD.X.production.o
+SD_SPI_Read@response 72 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__ptext1 3C 0 CODE 0 text1 dist/free/production/SD.X.production.o
+__ptext2 D22 0 CODE 0 text2 dist/free/production/SD.X.production.o
+__ptext3 D00 0 CODE 0 text3 dist/free/production/SD.X.production.o
+__ptext4 9F0 0 CODE 0 text4 dist/free/production/SD.X.production.o
+__ptext5 BC2 0 CODE 0 text5 dist/free/production/SD.X.production.o
+__ptext6 C82 0 CODE 0 text6 dist/free/production/SD.X.production.o
+__ptext7 DE0 0 CODE 0 text7 dist/free/production/SD.X.production.o
+__ptext8 5BC 0 CODE 0 text8 dist/free/production/SD.X.production.o
+__ptext9 D42 0 CODE 0 text9 dist/free/production/SD.X.production.o
+__end_of_SD_Card_Command 9F0 0 CODE 0 text14 dist/free/production/SD.X.production.o
+__end_of_SD_SPI_Init CDC 0 CODE 0 text10 dist/free/production/SD.X.production.o
+__end_of_SD_SPI_Read DB2 0 CODE 0 text18 dist/free/production/SD.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+SD_Card_WaitIfBusy@i 74 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+SD_Card_RWInit@singleOrMultiBlock 34 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__size_of_SD_Card_RWEnd 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_RWStartMulti 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__end_of__initialization 34 0 CODE 0 cinit dist/free/production/SD.X.production.o
+SD_Card_Init@i_755 35 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+SD_Card_Init@i_757 37 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 215 0 ABS 0 - dist/free/production/SD.X.production.o
+SD_Card_Crc7@data 70 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+__end_of_SD_Card_RWStartMulti D22 0 CODE 0 text3 dist/free/production/SD.X.production.o
+?_SD_Card_GetSize 70 0 COMMON 1 cstackCOMMON dist/free/production/SD.X.production.o
+_SSP1BUF 211 0 ABS 0 - dist/free/production/SD.X.production.o
+__Hend_init 14 0 CODE 0 end_init -
+_SD_Card_Crc7 AC0 0 CODE 0 text15 dist/free/production/SD.X.production.o
+_SD_Card_Init 758 0 CODE 0 text11 dist/free/production/SD.X.production.o
+__end_of_SD_Card_RWEnd C0E 0 CODE 0 text5 dist/free/production/SD.X.production.o
+_SD_Card_WaitStartToken C0E 0 CODE 0 text13 dist/free/production/SD.X.production.o
+__end_of_init D62 0 CODE 0 text9 dist/free/production/SD.X.production.o
+__end_of_loop 5BC 0 CODE 0 text1 dist/free/production/SD.X.production.o
+__end_of_main D80 0 CODE 0 maintext dist/free/production/SD.X.production.o
+__end_of_SD_Card_GetSize 758 0 CODE 0 text8 dist/free/production/SD.X.production.o
+_SD_Card_Command 8D8 0 CODE 0 text14 dist/free/production/SD.X.production.o
+__end_of_SD_Card_ProcessCRC CB6 0 CODE 0 text6 dist/free/production/SD.X.production.o
+_TRISA 8C 0 ABS 0 - dist/free/production/SD.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/free/production/SD.X.production.o
+SD_Card_Command@cmd 25 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+SD_Card_Command@crc 2B 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/free/production/SD.X.production.o
+loop@sum2 39 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+SD_Card_RWInit@readOrWrite 33 0 BANK0 1 cstackBANK0 dist/free/production/SD.X.production.o
+__initialization 14 0 CODE 0 cinit dist/free/production/SD.X.production.o
+__pbssBANK0 56 0 BANK0 1 bssBANK0 dist/free/production/SD.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/free/production/SD.X.production.o
+__CFG_WRT$OFF 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_Crc7 0 0 ABS 0 - dist/free/production/SD.X.production.o
+__size_of_SD_Card_Init 0 0 ABS 0 - dist/free/production/SD.X.production.o
+_SD_Card_ProcessCRC C82 0 CODE 0 text6 dist/free/production/SD.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 47 1
+intentry 0 4 8 6F1 2
+reset_vec 0 0 0 2 2
+bssBANK1 1 A0 A0 10 1
+config 0 8007 1000E 2 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
